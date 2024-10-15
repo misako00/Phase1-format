@@ -26,3 +26,161 @@ body{
     margin:0;
     line-height:1.6;
 }
+
+/* header */
+header {
+    width:100%;
+    display:flex;
+    /* 子要素を親要素の両端に配置 */
+    justify-content:space-between;
+    padding:0 20px;
+    color:#fff;
+    /* 背景色をblackにして綺麗に表示されていたらblackをinheritに変更 */
+    background-color:inherit;
+    /* first-vに合わせる */
+    position:absolute;
+    /* headerが一番上に来るようにする */
+    z-index:10;
+  
+  }
+  
+  .header-logo {
+    padding:20px 0;
+    font-weight:bold;
+    font-size:18px;
+  }
+  
+  /* first-viewのスタイル */
+  #first-v{
+    height:770px;
+    /* 背景画像を挿入 */
+    background-image: url("../img/bg1.png") ;
+    /* 画面全体に画像が表示されるように */
+    background-size:cover;
+  }
+  
+  .header-nav ul{
+    display:flex;
+    padding:22px 0;
+  }
+  
+  .first-v-title {
+    margin-bottom:150px;
+    /* 文字を太文字に */
+    font-weight:bold;
+    font-size: 27px;
+  }
+  
+  /* first-viewのスタイル 下が反映されないのはなぜ？*/
+  #first-v{
+      height:770px;
+      /* 背景画像を挿入 */
+      background-image: url("../img/bg1.png") ;
+      /* 画面全体に画像が表示されるように */
+      background-size:cover;
+  }
+  
+  .first-v-wrap{
+      padding:285px 0 255px;
+      /* ブロック要素を中央揃え */
+      margin:0 auto;
+      width:250px;
+      text-align: center;
+  }
+  
+  /*共通パート*/
+  .first-v-btn {
+    width:200px;
+    height:50px;
+    text-align: center;
+    font-weight: bold;
+    /* 枠線を消す */
+    border:none;
+    /* 要素の枠を丸くする */
+    border-radius: 5px;
+    /* -90degで左から右にグラデーションする */
+    background: linear-gradient(-90deg,#283C86,#06BEB6);
+    /* 要素に影をつける */
+    box-shadow:0px 5px #070707;
+    font-weight:bold;
+    font-size:15px;
+    color:#FFF;
+  }
+  
+  .first-v-title::after {
+    display:block;
+    content:"";
+    width:100px;
+    margin:20px auto 0;
+    /* 線を作る */
+    border-top:1px solid #FFF;
+  }
+  
+  /* first-viewのスタイル */
+  .fa-door-open {
+    padding-right:4px;
+  }
+  
+  
+  .first-v-wrap{
+    padding:285px 0 255px;
+    /* ブロック要素を中央揃え */
+    margin:0 auto;
+    width:250px;
+    text-align: center;
+  }
+  
+  .header-nav ul{
+    /* 子要素を横向きに配置 */
+    display:flex;
+    padding:22px 0;
+  }
+  
+  .header-nav li{
+    /* li要素同士の余白 */
+    margin-left:55px;
+    font-size:15px;
+  }
+  
+  footer{
+    /* 背景色変更 */
+    background-color:#191919;
+    height:50px;
+  }
+  
+  .company-info{
+    /* 文字を横方向に中央揃え */
+    text-align:center;
+    line-height:50px;
+    font-weight:bold;
+    font-size: 12px;
+    color:#FFF;
+  }
+  /* entryのスタイル */
+  #entry {
+    background-color: #FFF;
+  }
+  
+  .entry-wrap {
+    padding:175px 0;
+    width:400px;
+    /* 横方向に中央揃えに */
+    margin:0 auto;
+    /* 文字を中央揃えに */
+    text-align: center;
+  }
+  
+  .entry-title {
+    /* 横方向に中央揃え */
+    margin-bottom:55px;
+    font-weight:bold;
+    font-size:18px;
+    color:#191919;
+  }
+  
+  .entry-btn{
+    /* entryセクションのボタン幅に変更 */
+    width:320px;
+  }
+
+  
